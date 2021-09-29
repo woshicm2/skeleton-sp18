@@ -66,12 +66,12 @@ public class NBody{
 			StdDraw.show();
 			StdDraw.pause(10);
 		}
-		StdOut.printf("%d\n", bodies.length);
+		StdOut.printf("%d\n", planets.length);
 		StdOut.printf("%.2e\n", radius);
-		for (int i = 0; i < bodies.length; i++) {
+		for (int i = 0; i < planets.length; i++) {
     	StdOut.printf("%11.4e %11.4e %11.4e %11.4e %11.4e %12s\n",
-                  bodies[i].xxPos, bodies[i].yyPos, bodies[i].xxVel,
-                  bodies[i].yyVel, bodies[i].mass, bodies[i].imgFileName);   
+                  planets[i].xxPos, planets[i].yyPos, planets[i].xxVel,
+                  planets[i].yyVel, planets[i].mass, planets[i].imgFileName);   
 		}
 
 	}
