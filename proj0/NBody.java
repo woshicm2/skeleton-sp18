@@ -1,14 +1,14 @@
 import java.lang.reflect.Array;
 public class NBody{
 	public static double readRadius(String fileName){
-	In in = new In("data/planets.txt");
+	In in = new In(fileName);
 	int number = in.readInt();
 	double radius = in.readDouble();	
 	return radius;
 	}
 
 	public static Planet[] readPlanets(String fileName){
-		In in = new In("data/planets.txt");
+		In in = new In(fileName);
 		int number = in.readInt();
 		double radius = in.readDouble();
 		Planet[] planets = new Planet[number];
