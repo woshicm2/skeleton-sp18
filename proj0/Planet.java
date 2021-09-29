@@ -52,12 +52,7 @@ public class Planet{
 			if(ps[i].equals(this)){
 				continue;
 			}
-			if(this.xxPos - ps[i].xxPos >= 0 ){
-				xNetForce = xNetForce - this.calcForceExertedByX(ps[i]);
-			}else{
-				xNetForce = xNetForce + this.calcForceExertedByX(ps[i]);
-			}
-			
+			xNetForce = xNetForce + this.calcForceExertedByX(ps[i]);			
 		}
 		return xNetForce;
 	}
@@ -67,11 +62,7 @@ public class Planet{
 			if(ps[i].equals(this)){
 				continue;
 			}
-			if(this.yyPos - ps[i].yyPos >= 0 ){
-				yNetForce = yNetForce - this.calcForceExertedByY(ps[i]);
-			}else{
-				yNetForce = yNetForce + this.calcForceExertedByY(ps[i]);
-			}
+			yNetForce = yNetForce + this.calcForceExertedByY(ps[i]);
 		}
 		return yNetForce;
 	}
