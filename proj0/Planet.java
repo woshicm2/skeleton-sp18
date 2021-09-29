@@ -37,18 +37,12 @@ public class Planet{
 		return force;
 	}
 	public double calcForceExertedByX(Planet p){
-		double dx = this.xxPos - p.xxPos;
-		if(dx < 0){
-			dx = - dx;
-		}
+		double dx = p.xxPos - this.xxPos;
 		double forceX = calcForceExertedBy(p)* dx / calcDistance(p);
 		return forceX;
 	}
 	public double calcForceExertedByY(Planet p){
-		double dy = this.yyPos - p.yyPos;
-		if(dy < 0){
-			dy = - dy;
-		}
+		double dy = p.yyPos - this.yyPos;
 		double forceY = calcForceExertedBy(p)* dy / calcDistance(p);
 		return forceY;
 	}
